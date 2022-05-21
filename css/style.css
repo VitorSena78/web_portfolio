@@ -1,0 +1,258 @@
+*{
+
+	font-family: 'Roboto', sans-serif;
+	margin:0;/*margem da borda para fora*/
+	padding:0;/*margem da borda para dentro*/
+
+
+
+}
+
+html{
+	/* conportamento de rolagem smooth=suave */
+	scroll-behavior: smooth;
+
+}
+
+body{
+
+
+
+	background-color: #000;
+	color: #fff;
+
+
+
+}
+
+a{/*linkis*/
+
+	color: white;
+	text-decoration: none;/*decoração do texto nem um*/
+
+}
+
+h1{
+
+	text-align: center;
+	font-size: 36px;
+	margin-bottom: 20px;/* margem abaixo */
+	margin-top: 50px;
+
+}
+
+header{
+	/* afastamento do topo e da base */
+	padding: 20px 0;
+	/* fixa durante a rolagem */
+	position: fixed;
+	background-color:rgb(0, 0, 0);
+	/* largura do elemento */
+	width: 100%;
+	/* distancia do topo */
+	top: 0;
+	/* camada */
+	z-index: 3;
+
+}
+section{
+	margin: 60px 0;
+}
+input, textarea{/* aplicado aos dois */
+	width: 100%;
+	padding: 10px;
+	margin: 5px 0;/* topo, direita, base, esquerda */
+
+}
+:target{
+	scroll-margin-top:100px;
+}
+/*classes e obijetos*/
+.header-logo{
+	width: 50px;
+}
+.container{
+
+	/*background-color:lime;*/
+
+	max-width:1170px;
+	margin: 0 auto 0 auto;/* centraliza a div */
+
+}
+
+.box-flex{
+
+	display: flex;
+
+	justify-content: space-between;
+
+}
+
+.flex-center{
+
+	display: flex;/*visualisaçao flexivel*/
+	font-size: 28px;
+
+}
+
+.headre-navbar ul li{/*caminho para os elementos*/
+
+	margin: 0 20px;
+
+	list-style: none;
+
+	text-transform: uppercase;
+	
+
+}
+
+.headre-navbar ul li a:hover{/*hover = sobreposto muda a cor quando sobre o mouse*/
+
+	color: gold;
+
+}
+
+.header-social-media ul li{
+
+	margin: 0 10px;
+
+	list-style: none;
+
+}
+
+.header-social-media ul li a:hover{
+
+	color:aquamarine;
+
+}
+
+#image-about{
+
+	width:40%;/* width=largura */
+
+}
+
+#image-about img{
+
+	width: 100%;
+	margin-top: 50px;
+
+}
+
+#about{
+
+	width: 55%;
+
+}
+
+/*gallery*/
+.gallery-wrap{
+	flex-wrap: wrap; /* ao final da quebra  */
+
+}
+.gallery-card{
+
+	width: 30%;
+
+	height: 500px;
+
+	border: solid 1px gray;
+
+	display: flex;
+
+	align-items: center;
+
+	align-content:center; 
+
+	justify-content: center;
+
+	flex-direction: column;
+	margin-bottom:20px;/* margem na base */
+
+
+}
+
+.gallery-img{
+
+	background-size: 150%;
+
+	background-position: center;
+
+	background-color:#9793d6;
+
+	background-blend-mode: multiply; 
+
+	transition:.3s;
+
+}
+
+.gallery-img:hover{
+
+	background-size:170%;
+
+	background-color:white;
+
+}
+
+#card-1{
+
+	background-image: url(../images/img1.jpg);
+
+}
+#card-2{
+
+	background-image: url(../images/img2.jpg);
+
+}
+#card-3{
+
+	background-image: url(../images/img3.jpg);
+
+}
+#card-4{
+
+	background-image: url(../images/img4.jpg);
+
+}
+#card-5{
+
+	background-image: url(../images/img5.jpg);
+
+}
+#card-6{
+
+	background-image: url(../images/img6.jpg);
+
+}
+/* section contato */
+#dados-contato{
+	width: 45%;
+}
+
+#form{
+	width:45%;
+}
+.btn-submit{
+	width: 250px;
+	background-color: #4169e1;
+	color: white;
+	border-radius: 4px;
+}
+.btn-submit:hover{
+	background-color: #191970;
+}
+/* css responsivo */
+@media screen and (max-width: 980px){
+	body{
+		background-color: olive;
+	}
+
+}
+@media screen and (max-width: 380px){
+	body{
+		background-color: blue;
+	}
+
+}
+
+/*RGB (0, 0, 0)(256, 256, 256)(ff, ff, ff)*/
